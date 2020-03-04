@@ -1,0 +1,13 @@
+body {
+  background: coral;
+}
+/* this is my css notes*/
+#my_id {
+  color: white;
+  text-align: center;
+}
+
+.my_class {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}

@@ -1,0 +1,121 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #faebd7;
+  color: #000000;
+}
+
+/* Header Area */
+
+header {
+  background-color: #f5deb3;
+  text-align: right;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 25px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  color: #696969;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px;
+}
+
+header ul li a:hover {
+  background-color: #faebd7;
+}
+
+/* Main Area */
+
+main > p {
+  background-color: FFFFF0;
+}
+
+h1 {
+  color: #696969;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #bc8f8f;
+  color: #faebd7;
+}
+
+th,
+td {
+  width: 300px;
+  padding: 20px;
+}
+
+tr {
+  border-bottom: 1px solid #bc8f8f;
+}
+
+/* Boxes */
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
+  width: 100px;
+  height: 100px;
+  background-color: #bc8f8f;
+  margin: 20px;
+}
+
+#box1 {
+  border: 5px dotted #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+#box2 {
+  border: 5px double #ffffff;
+}
+
+#box3 {
+  border-width: 10px;
+  border-style: groove;
+  border-color: greenyellow pink yellow orange;
+}
+
+#box4 {
+  border: 5px solid #000000;
+  border-radius: 5px;
+}
+
+#box5 {
+  border: 4px dashed #ffffff;
+  border-radius: 50%;
+}
+
+/* background image for boxes */
+#boxes {
+  background-image: url("https://source.unsplash.com/daily");
+  background-repeat: no-repeat;
+  background-position: center center; /* x and y */
+  background-attachment: fixed;
+  background-size: cover;
+
+  background: url("https://source.unsplash.com/daily") no-repeat fixed center
+    center/ cover;
+}

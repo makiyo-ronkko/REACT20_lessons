@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: wheat;
+}
+
+section{
+    height: 75vh;
+    background: #eeeeee;
+}
+
+section::before{
+    content: 'some text there';
+}
+
+section::after{
+    content: 'this is after text';
+}
+
+/* body{
+    background-color: silver;
+    display: flex;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.box:hover{
+    background-color: coral;
+    font-size:4rem;
+    height: 400px;
+}
+
+.box:first-child{
+    background-color: crimson;
+}
+
+.box:nth-child(3){
+    background: darkseagreen;
+    /*align-self: center;
+}
+
+.box:nth-child(even){
+    background: darkviolet;
+  
+}
+
+.box:last-child{
+    background-color: darkkhaki;
+}
+
+li:first-child{
+    background-color: skyblue;
+} */
+
+/*max-width and min-width are the breakboint*/
+/*@media(media query) needs to be in the end so that it doesn't affect the desktop version while coding.*/
+@media screen and (min-width: 250px){
+    body{
+        background-color: greenyellow;
+    }
+}
+
+@media screen and (min-width: 500px){
+    body{
+        background-color: sandybrown;
+    }
+}
+
+@media screen and (min-width: 750px){
+    body{
+        background-color: orangered;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    body{
+        background-color: honeydew;
+    }
+}

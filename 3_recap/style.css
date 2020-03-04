@@ -1,0 +1,11 @@
+h1 {
+  font-family: "Source San Pro", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  background-color: cornsilk;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  line-height: 2rem;
+}

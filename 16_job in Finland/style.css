@@ -1,0 +1,639 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Finlandica', sans-serif;
+    background-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.wrap{
+  margin: 0 100px 0 100px;
+}
+
+/* Font */
+
+@font-face {
+  font-family: 'Finlandica';
+  src: url('fonts/Finlandica-Regular.ttf'); 
+}
+
+/* Scroll top */
+
+#page_top{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #A9A9A9;
+  opacity: 0.4;
+  z-index: 10;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f106";
+  font-size: 25px;
+  color: #000000;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/* Header grid */
+
+header{
+    background-color: white;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-gap: 0.5em;
+}
+
+.header-container p{
+    color: darkblue;
+    width: 50px;
+}
+
+.logo{
+    margin-left: 40px;
+    font-size: 2rem;
+    width: 130px;
+}
+
+.item{
+    min-height: 50px;
+}
+
+.header-link{
+    align-self: center;
+    justify-self: end;
+    padding: 0 40px 0 40px;
+}
+.header-link a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Navigation grid */
+
+.nav-container{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    background-color: darkblue;
+    padding-left: 40px;
+}
+
+.nav-container ul{
+    list-style-type: none;
+    align-self: center;
+    justify-self: start;
+}
+
+.nav-container ul li{
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.nav-container li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.nav-container li a:hover{
+  border-bottom: 2px solid white;
+}
+
+.nav-container li#mainlink{
+  border-bottom: 2px solid white;
+}
+
+.nav-border-bottom{
+  background-color: #ffffff;
+  color: #ffffff;
+  border-color: #ffffff;
+  bottom: 0px;
+  height: 3px;
+}
+
+/* Seach box */
+
+#custom-search .search-query {
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: transparent;
+  font-size: 1.2em;
+  transition: all 0.8s;
+  margin-bottom: 0;
+}
+
+/* Hide Text when unfocused plus fallbacks */
+#custom-search .search-query::placeholder {
+  color: transparent;
+  transition: all 0.8s;
+}
+
+/* Style when Search is selected */
+#custom-search .search-query:focus {
+  border-radius: 50px;
+  border: 2px solid white;
+  background-color: #5f586a;
+  width: 100px;
+  height: 10px;
+  color: white;
+}
+
+/* Style for placeholder value plus fallbacks */
+#custom-search .search-query:focus::placeholder {
+  color: #cccccc;
+}
+
+/* Style for Button */
+#custom-search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  position: relative;
+  top: 2px;
+  left: -48px;
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+
+/* Font Awesome Icon Style */
+#custom-search button i {
+  color:white;
+}
+
+/* Dropdown menu */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;}
+
+.dropdown{
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;}
+
+
+/* Hero banner grid */
+
+
+#hero-banner{
+    position: relative;
+    height:100%;
+    width: 100%;
+    z-index: 1;
+    min-height: 400px;
+    background: rgb(0, 0, 139, 0.2);
+}
+
+#hero-banner::before{
+    content: "";    
+    background:url("https://source.unsplash.com/1600x900/?finland") no-repeat fixed center center/ cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.hero-banner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    position: relative;
+    z-index: 100;
+    height: 100%;
+}
+
+.hero-banner-container p:first-child{
+    font-size: 6em;
+    color: white;
+    padding: 80px 80px 0 80px;
+    text-align: center;
+}
+
+.hero-banner-container p{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 0 150px 50px 150px;
+}
+
+/* Category header grid */
+
+#category-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    background-color: white;
+    color: darkblue;
+    padding: 50px 40px 80px 40px;
+}
+
+#category-header h2{
+    font-size: 2rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#category-header p{
+  font-size: 1.5rem;
+  color: black;
+}
+
+/* Category boxes grid */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: relative;
+    min-height: 100px;
+    transition: all 0.3s;
+    padding: 0 40px 40px 40px;
+}
+
+.text{
+  margin: 0 0 10px 5px;
+}
+.text:hover{
+  border-bottom: 1.5px solid whitesmoke;
+}
+
+.box{
+    min-height:15vh;
+    min-width: 50%;
+    background: white;
+    display: grid;
+    justify-items: first;
+    align-items: end;
+    transition: background 1s 1s;
+}
+
+#adminitsration{
+  background-image: url("https://source.unsplash.com/1600x900/?administration");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#academic{
+  background-image: url("https://source.unsplash.com/1600x900/?academic");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#engineering{
+  background-image: url("https://source.unsplash.com/1600x900/?engineering");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#finance{
+  background-image: url("https://source.unsplash.com/1600x900/?finance");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#health{
+  background-image: url("https://source.unsplash.com/1600x900/?health");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hospitality{
+  background-image: url("https://source.unsplash.com/1600x900/?hospitality");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hr{
+  background-image: url("https://source.unsplash.com/1600x900/?hr");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#ict{
+  background-image: url("https://source.unsplash.com/1600x900/?ict");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#manufacturing{
+  background-image: url("https://source.unsplash.com/1600x900/?manufacturing");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#marketing-sales{
+  background-image: url("https://source.unsplash.com/1600x900/?marketing-sales");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#project-management{
+  background-image: url("https://source.unsplash.com/1600x900/?management");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#service{
+  background-image: url("https://source.unsplash.com/1600x900/?service");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.text{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}
+
+/* Region header grid */
+
+#region-header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5em;
+  background-color: white;
+  color: darkblue;
+  padding: 50px 40px 80px 40px;
+}
+
+#region-header h2{
+    font-size: 2rem;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+#region-header p{
+  font-size: 1.5rem;
+  color: black;
+}
+
+#region-header button{
+  background: darkblue;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#region-header button:hover{
+  background:rgb(0, 0, 139, 0.8);
+}
+
+#region-header a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family:  'Finlandica', sans-serif;
+}
+
+#turku{
+    background-image: url("https://source.unsplash.com/1600x900/?turku");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+#lapland{
+    background-image: url("https://source.unsplash.com/1600x900/?lapland");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #lakeland{
+    background-image: url("https://source.unsplash.com/1600x900/?lakeland");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #south-ostrobothnia{
+    background-image: url("https://source.unsplash.com/1600x900/?south-ostrobothnia");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #helsinki{
+    background-image: url("https://source.unsplash.com/1600x900/?helsinki");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #espoo{
+    background-image: url("https://source.unsplash.com/1600x900/?espoo");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #tampere{
+    background-image: url("https://source.unsplash.com/1600x900/?tampere");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #oulu{
+    background-image: url("https://source.unsplash.com/1600x900/?oulu");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #talent-coastline{
+    background-image: url("https://source.unsplash.com/1600x900/?talent-coastline");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #kuopio{
+    background-image: url("https://source.unsplash.com/1600x900/?kuopio");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #jyvaskyla{
+    background-image: url("https://source.unsplash.com/1600x900/?jyväskylä");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+/* footer */
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: darkblue;
+    color: white;
+    padding: 50px 30px 20px 40px;
+}
+
+.footer-container{
+  font-size: 1rem;
+}
+
+.footer-container ul{
+    list-style-type: none;
+    align-self: center;
+    justify-self: start;
+}
+
+.footer-container ul li{
+    margin: 10px;
+    text-transform: uppercase;
+    
+}
+.footer-container li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+.footer-container li a:hover{
+   border-bottom: 1px solid white;
+}
+
+.contact p{
+  padding: 0 40px 20px 0;
+}
+
+.contact a{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .hero-banner-container p:first-child, .hero-banner-container p{
+      padding: 10px;
+    }
+
+    .nav-container, .grid-container, .header-container, #category-header, #region-header{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    .wrap{
+      margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header-container, .hero-banner-container, .about-container, .myskill-container, .skill-card, .footer-wrapper, .footer-container{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width:480px) and (max-width:1400px) {
+    .wrap{
+      margin: 0;
+    }
+  }

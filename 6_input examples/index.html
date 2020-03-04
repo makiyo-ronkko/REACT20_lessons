@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Input Examples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Input Example</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <h2>Form Elements</h2>
+                <tr>
+                    <td class="center" colspan="3">Input Types:</td>
+                </tr>
+                <tr>
+                    <td>type="button"</td>
+                    <td><input type="button" value="click me" /></td>
+                    <td>Needs value attribute for button text</td>
+                </tr>
+                <tr>
+                    <td>type="checkbox"</td>
+                    <td><input type="checkbox" name="vehicle1" value="Bike" checked />Bike<br>
+                        <input type="checkbox" name="vehicle2" value="Car" />Car<br>
+                    </td>
+                    <td>Defines a checkbox, which the user can toggle on or off.</td>
+                </tr>
+                <tr>
+                    <td>type="color"</td>
+                    <td><input type="color" value="#ff0000" /></td>
+                    <td>Defines a color picker. The default value is #000000 (black).</td>
+                </tr>
+                <tr>
+                    <td>type="date"</td>
+                    <td><input type="date" value="2020-01-29" /></td>
+                    <td>Used for input fields that should contain a date.</td>
+                </tr>
+                <tr>
+                    <td>type="email"</td>
+                    <td><input type="email" placeholder="Enter your email" /></td>
+                    <td>Used for input fields that should contain an e-mail address.</td>
+                </tr>
+                <tr>
+                    <td>type="file"</td>
+                    <td><input type="file" accept="image/png, image/jpeg" /></td>
+                    <td>Defines a file upload box with a browse button.</td>
+                </tr>
+                <tr>
+                    <td>type="hidden"</td>
+                    <td><input type="hidden" /></td>
+                    <td>Defines a field within a form that is not visible to the user.</td>
+                </tr>
+                <tr>
+                    <td>type="month"</td>
+                    <td><input type="month" min="2019-03" value="2020-01" /></td>
+                    <td>Allows the user to select a month and year.</td>
+                </tr>
+                <tr>
+                    <td>type="number"</td>
+                    <td><input type="number" min="10" max="100" placeholder="88" /></td>
+                    <td>Defines a numeric input field.</td>
+                </tr>
+                <tr>
+                    <td>type="password"</td>
+                    <td><input type="password" minlength="8" placeholder="********" required /></td>
+                    <td>Displays an obfuscated password entry field.</td>
+                </tr>
+                <tr>
+                    <td>type="radio"</td>
+                    <td><input type="radio" name="gender" value="female" checked />Female<br>
+                        <input type="radio" name="gender" value="male" />Male<br>
+                        <input type="radio" name="gender" value="other" />Other<br>
+
+                    </td>
+                    <td>Defines a circular selection button in a form.</td>
+                </tr>
+                <tr>
+                    <td>type="range"</td>
+                    <td><input type="range" step="1" min="0" max="10" /></td>
+                    <td>Defines a control for entering a number whose exact value is not important</td>
+                </tr>
+                <tr>
+                    <td>type="reset"</td>
+                    <td><input type="reset" value="Reset" /></td>
+                    <td>Defines a button on a form that will return all fields to their default values.</td>
+                </tr>
+                <tr>
+                    <td>type="search"</td>
+                    <td><input type="search" value="search here." /></td>
+                    <td>Used for search fields</td>
+                </tr>
+                <tr>
+                    <td>type="submit"</td>
+                    <td><input type="submit" value="Submit" /></td>
+                    <td>Defines a button that is clicked to submit a form.</td>
+                </tr>
+                <tr>
+                    <td>type="tel"</td>
+                    <td><input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /></td>
+                    <td>Used for input fields that should contain a telephone number.</td>
+                </tr>
+                <tr>
+                    <td>type="text"</td>
+                    <td><input type="text" value="I am text" /></td>
+                    <td>Defines a text entry field in a form.</td>
+                </tr>
+                <tr>
+                    <td>type="time"</td>
+                    <td><input type="time" min="09:00" max="18:00" required /></td>
+                    <td>Allows the user to select a time (no time zone).</td>
+                </tr>
+                <tr>
+                    <td>type="url"</td>
+                    <td><input type="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+                    </td>
+                    <td>Used for input fields that should contain a URL address.</td>
+                </tr>
+                <tr>
+                    <td>type="week"</td>
+                    <td><input type="week" min="2019-W18" max="2021-W26" required /></td>
+                    <td>Allows the user to select a week and year.</td>
+                </tr>
+                <tr>
+                    <td>Select example:</td>
+                    <td>
+                        <select name="cars" size="4" multiple>
+                            <option value="volvo">Volvo</option>
+                            <option value="Saab">Saab</option>
+                            <option value="Fiat">Fiat</option>
+                            <option value="Audi">Audi</option>
+                        </select>
+                    </td>
+                    <td>Select is wrapping options.</td>
+                </tr>
+                <tr>
+                    <td>Textarea</td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                    <td>The size of a text area can be specified by the cols and rows attributes, or even better;
+                        through CSS' height and width properties.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    background: #f4f4f4;
+    height: 400px;
+    width: 100vw;
+    padding: 1rem;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background: honeydew;
+    border-radius: 5px;
+    padding: 1rem;
+}  
+
+#section-a .item:nth-child(2){
+    z-index: 3;
+    position: relative;
+}
+
+#section-a .item:nth-child(3){
+    background: lavender;
+    position: relative;
+    top: -100px;
+    left: 100px;
+    z-index: 2;
+}
+
+#section-b .item{
+    position: fixed;
+    top:0;
+    right: 0;
+}
+
+#section-c .item{
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+}
+/* .section -> position: relative; then section-c .item will stay inside of the own section.*/
+
+
+#section-d {
+    height: 2000px;
+}
+
+#section-d .item{
+    position: sticky;
+    top: 100px;
+}
+/* marketing is using sticky after showing interaction pages */

@@ -1,0 +1,25 @@
+body {
+  background-color: lightslategray;
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  border: 5px dotted Tomato;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: lightcoral;
+  text-shadow: 3px 2px red;
+}
+
+strong {
+  color: lightsalmon;
+  font-size: 52px;
+  text-shadow: 3px 2px white;
+}
+
+#important {
+  color: lightpink;
+}
