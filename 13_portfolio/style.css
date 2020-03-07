@@ -11,7 +11,6 @@ body{
 
 html{
     scroll-behavior: smooth;
-    height: 100%;
 }
 
 /* Scroll top */
@@ -299,6 +298,7 @@ Footer
     position: relative;
     background-color: #000000;
     color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .footer-container{
@@ -330,6 +330,7 @@ Footer
 form{
     display: inline-block;
     padding-left: 10px;
+    position: relative;
   }
 
 input{
@@ -338,19 +339,29 @@ input{
     border-radius: 5px;
   }
 
+textarea{
+    width: 100%;
+}
+
 .btn button{
     display: block;
-    width: 80px;
+    width: 240px;
 }
 
 
   @media screen and (max-width: 480px) {
     .header-container, .hero-banner-container, .about-container, .myskill-container, .skill-card, .footer-wrapper, .footer-container {
       display: block;
+      height: 100%;
     }
     .header-container-logo{
         margin:0;
     }
+    .hero-banner-container h2{
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .hero-banner-container 
     input{
         width: 80%;
         padding: 5px;
@@ -361,17 +372,44 @@ input{
        justify-content: flex-end;
        margin-bottom: 0;
     }
+    form{
+        display: block;
+        margin: 0 auto;
+        min-height: 720px;
+        padding: 20px;
+    }
+    #page_top{ /*need to check*/
+        position: fixed;
+        right: 0;
+        bottom: 50px;
+    }
+
   }
   
-  @media (min-width: 481px) and (max-width: 767px) { 
-    .header-container-logo{
-      margin-top: 0;
-    }
+  @media (min-width: 481px) and (max-width: 1024px) { 
     html{
-        height: auto;
+        height: 100%;
     }
-    .footer.wrapper {
-       min-height: 80vh;
+    .header-container-logo{
+        margin-top: 0;
+    }
+    .header-container, .hero-banner-container, .about-container, .myskill-container, .footer-wrapper {
+        flex: 50%;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+    textarea{
+        width: 200px;
+    }
+
+    footer {
+       min-height: 100vh;
+       margin-bottom: 50px;
+    }
+    #page_top{ /*need to check*/
+        position: fixed;
+        right: 50px;
+        bottom: 500px;
     }
 
 }
