@@ -558,10 +558,12 @@ header{
       margin: 0;
     }
     .grid-container, #category-header, #region-header, .footer-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
+      display: block;
+      margin: auto;
       height: 100%;
+    }
+    .box {
+      margin: 10px;
     }
     .hero-banner-container p:first-child, .hero-banner-container p{
       padding: 10px 0;
@@ -571,12 +573,33 @@ header{
       font-size: 4rem;
     }
     .footer-container{
-      margin-bottom: 260px;
+     grid-template-columns: auto;
+     grid-template-rows: repeat(4, 1fr);
+    }
+    #page_top{
+      position: fixed;
+      right: 0;
+      bottom: 30px;
     }
   }
   
   @media screen and (min-width:481px) and (max-width:1400px) {
     .wrap{
       margin: 0;
+      height: 100%;
     }
+    .grid-container, .footer-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: auto;
+    }
+    #page_top{
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+    }
+    .nav-container{
+      grid-template-columns: 6fr 1fr;
+      background-color: var(--primary-color);
+      padding: 10px;
+  }
   }
