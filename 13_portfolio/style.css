@@ -21,8 +21,8 @@ html{
     margin: 10px;
     border-radius: 5px;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     background: #A9A9A9;
     opacity: 0.4;
     z-index: 10;
@@ -293,12 +293,17 @@ My Skill
 Footer
 */
 
+footer{
+    height: 100%;
+}
+
 .footer-wrapper{
     display: flex;
     position: relative;
     background-color: #000000;
     color: #ffffff;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
 .footer-container{
@@ -372,16 +377,16 @@ textarea{
        justify-content: flex-end;
        margin-bottom: 0;
     }
-    form{
-        display: block;
-        margin: 0 auto;
-        min-height: 720px;
-        padding: 20px;
+    footer{
+        height: 100%;
     }
-    #page_top{ /*need to check*/
+    .footer-text-3{
+        min-height: 100vh;
+    }
+    #page_top{ 
         position: fixed;
-        right: 0;
-        bottom: 50px;
+        right: 10vw;
+        bottom: 35vh;
     }
 
   }
@@ -402,14 +407,16 @@ textarea{
         width: 200px;
     }
 
-    footer {
-       min-height: 100vh;
-       margin-bottom: 50px;
+    footer{
+        height: 100%;
     }
-    #page_top{ /*need to check*/
+    .footer-container{
+        min-height: 100vh;
+    }
+    #page_top{ 
         position: fixed;
-        right: 50px;
-        bottom: 500px;
+        right: 5vw;
+        bottom: 50vh;
     }
 
 }
