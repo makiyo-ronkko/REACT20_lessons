@@ -536,12 +536,11 @@ footer{
 }
 .footer-container ul{
     list-style-type: none;
-    align-self: center;
-    justify-self: start;
 }
 
 .footer-container ul li{
     margin: 10px;
+    padding: 10px;
 }
 .footer-container li a{
     text-decoration: none;
@@ -581,14 +580,21 @@ footer{
     .hero-banner-container p:first-child{
       font-size: 4rem;
     }
+    footer{
+     height: 100%;
+    }
     .footer-container{
-     grid-template-columns: auto;
-     grid-template-rows: repeat(4, 1fr);
+      min-height: 100vh;
+      padding: 20px;
+      margin: 20px;
+    }
+    .contact{
+      height: 80px;
     }
     #page_top{
       position: fixed;
-      right: 0;
-      bottom: 30px;
+      right: 10vw;
+      bottom: 35vh;
     }
   }
   
@@ -597,18 +603,22 @@ footer{
       margin: 0;
       height: 100%;
     }
-    .grid-container {
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: auto;
-    }
     #page_top{
       position: fixed;
-      right: 50px;
-      bottom: 50px;
+      right: 5vw;
+      bottom: 10vh;
     }
     .nav-container{
       grid-template-columns: 6fr 1fr;
       background-color: var(--primary-color);
       padding: 10px;
   }
+    footer{
+      height: 100%;
+   }
+    .footer-container{
+      min-height: 100vh;
+      padding: 20px;
+      margin: 20px 20px 0 20px;
+   }
   }
