@@ -51,13 +51,13 @@ header ul li a:hover {
 }
 
 #logo a{
-padding: 10px;
-margin: 0;
+    padding: 10px;
+    margin: 0;
 }
 
 #logo img:hover{
-background-color: #888888;
-border-radius: 5px;
+    background-color: #888888;
+    border-radius: 5px;
 }
 
 /* Main home*/

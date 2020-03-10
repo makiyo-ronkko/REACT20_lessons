@@ -5,73 +5,74 @@
 }
 body{
     font-family: 'Finlandica', sans-serif;
-    background-color: var(--secondary-color);    height: 100%;
-
+    background-color: var(--secondary-color);
+    height: 100%;
 }
 
 html{
     scroll-behavior: smooth;
-    height: 100%;
 }
 
 .wrap{
-  margin: 0 100px 0 100px;
+    margin: 0 100px 0 100px;
 }
 
 :root {
-  --primary-color: darkblue;
-  --secondary-color: white;
+    --primary-color: darkblue;
+    --secondary-color: white;
   }
 
 /* Font */
 
 @font-face {
-  font-family: 'Finlandica';
-  src: url('fonts/Finlandica-Regular.ttf'); 
+    font-family: 'Finlandica';
+    src: url('fonts/Finlandica-Regular.ttf'); 
 }
 
 /* Scroll top */
 
 #page_top{
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 5px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  background: var(--secondary-color);
-  opacity: 0.4;
-  z-index: 10;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: var(--secondary-color);
+    opacity: 0.4;
+    z-index: 10;
 }
+
 #page_top a{
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
 }
+
 #page_top a::before{
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f106";
-  font-size: 25px;
-  color: #000000;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    font-size: 25px;
+    color: darkblue;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
 }
 
 /* Header grid */
 
 header{
-  background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .header-container{
@@ -92,7 +93,7 @@ header{
 }
 
 .logo p:first-child{
-  white-space: nowrap; 
+    white-space: nowrap; 
 }
 
 .item{
@@ -104,6 +105,7 @@ header{
     justify-self: end;
     padding: 0 40px 0 40px;
 }
+
 .header-link a{
     text-decoration: none;
     color: var(--primary-color);
@@ -132,94 +134,94 @@ header{
 .nav-container li a{
     text-decoration: none;
     color: var(--secondary-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .nav-container li a:hover{
-  border-bottom: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 /* Dropdown menu */
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
 }
 
 .dropdown-content a {
-  color: var(--primary-color);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: var(--primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;}
+    background-color: #ddd;}
 
 .dropdown{
-  display: inline-block;
+    display: inline-block;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: transparent;
+    background-color: transparent;
 }
-
 
 /* Seach box */
 
 #custom-search .search-query {
-  padding: 15px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid transparent;
-  background-color: transparent;
-  color: transparent;
-  font-size: 1.2em;
-  transition: all 0.6s;
-  margin: 5px 0;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: transparent;
+    font-size: 1.2em;
+    transition: all 0.6s;
+    margin: 5px 0;
 }
 
 /* Hide Text when unfocused plus fallbacks */
 #custom-search .search-query::placeholder {
-  color: transparent;
-  transition: all 0.6s;
+    color: transparent;
+    transition: all 0.6s;
 }
 
 /* Style when Search is selected */
 #custom-search .search-query:focus {
-  border-radius: 50px;
-  border: 2px solid white;
-  background-color: var(--secondary-color);
-  width: 100px;
-  height: 10px;
-  color: var(--secondary-color);
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 10px;
+    color: var(--secondary-color);
 }
 
 /* Style for placeholder value plus fallbacks */
 #custom-search .search-query:focus::placeholder {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 /* Style for Button */
 #custom-search button {
-  border: 0;
-  background: none;
-  padding: 0;
-  position: relative;
-  left: 20px;
-  border-radius: 3px;
-  cursor: pointer;
+    border: 0;
+    background: none;
+    padding: 0;
+    position: relative;
+    left: 20px;
+    border-radius: 3px;
+    cursor: pointer;
 }
+
 #custom-search button i {
-  color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 /* Hero banner grid */
@@ -235,11 +237,12 @@ header{
 
 #hero-banner::before{
     content: "";    
-    background:url("https://source.unsplash.com/1600x900/?finland") no-repeat fixed center center/ cover;
+    background:url("https://source.unsplash.com/1600x900/?finland") no-repeat center center/ cover;
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.4;
+    transition: all 1s ease-in 1s;
 }
 
 .hero-banner-container {
@@ -250,13 +253,15 @@ header{
     z-index: 10;
 }
 
-.hero-banner-container p:first-child{
+.hero-banner-container p:first-child {
     font-size: 6em;
-    color: var(--secondary-color);
     padding: 80px 80px 0 80px;
     text-align: center;
+    white-space: nowrap; 
 }
-
+.hero-banner-container p:nth-child(2){
+    font-size: 6em;
+}
 .hero-banner-container p{
     font-size: 2em;
     color: var(--secondary-color);
@@ -266,7 +271,7 @@ header{
 
 /* Category header grid */
 
-#category-header{
+.category-header{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.5em;
@@ -275,15 +280,15 @@ header{
     padding: 50px 40px 80px 40px;
 }
 
-#category-header h2{
+.category-header h2{
     font-size: 2rem;
     padding-bottom: 5px;
     font-weight: bold;
 }
 
-#category-header p{
-  font-size: 1.5rem;
-  color: black;
+.category-header p{
+    font-size: 1.5rem;
+    color: black;
 }
 
 /* Category boxes grid */
@@ -301,10 +306,10 @@ header{
 }
 
 .text{
-  margin: 0 0 10px 5px;
+    margin: 0 0 10px 5px;
 }
 .text:hover{
-  border-bottom: 1.5px solid whitesmoke;
+    border-bottom: 1.5px solid whitesmoke;
 }
 
 .box{
@@ -314,85 +319,85 @@ header{
     display: grid;
     justify-items: first;
     align-items: end;
-    transition: background 1s 1s;
+    transition: all 1s ease-in 1s;
 }
 
 #adminitsration{
-  background: url("https://source.unsplash.com/1600x900/?administration");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background: url("https://source.unsplash.com/1600x900/?administration");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 #academic{
-  background-image: url("https://source.unsplash.com/1600x900/?academic");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?academic");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 #engineering{
-  background-image: url("https://source.unsplash.com/1600x900/?engineering");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?engineering");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 #finance{
-  background-image: url("https://source.unsplash.com/1600x900/?finance");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?finance");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #health{
-  background-image: url("https://source.unsplash.com/1600x900/?health");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?health");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #hospitality{
-  background-image: url("https://source.unsplash.com/1600x900/?hospitality");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?hospitality");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #hr{
-  background-image: url("https://source.unsplash.com/1600x900/?hr");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?hr");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #ict{
-  background-image: url("https://source.unsplash.com/1600x900/?ict");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?ict");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #manufacturing{
-  background-image: url("https://source.unsplash.com/1600x900/?manufacturing");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?manufacturing");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 #marketing-sales{
-  background-image: url("https://source.unsplash.com/1600x900/?marketing-sales");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?marketing-sales");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 #project-management{
-  background-image: url("https://source.unsplash.com/1600x900/?management");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?management");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 #service{
-  background-image: url("https://source.unsplash.com/1600x900/?service");
-  background-size: cover;
-  position: relative;
-  background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?service");
+    background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 .text{
@@ -403,43 +408,23 @@ header{
 
 /* Region header grid */
 
-#region-header{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.5em;
-  background-color: white;
-  color: var(--primary-color);
-  padding: 50px 40px 80px 40px;
+.category-header button{
+    background: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-#region-header h2{
-    font-size: 2rem;
-    padding-bottom: 5px;
-    font-weight: bold;
+.category-header button:hover{
+    background:rgb(0, 0, 139, 0.8);
 }
 
-#region-header p{
-  font-size: 1.5rem;
-  color: black;
-}
-
-#region-header button{
-  background: var(--primary-color);
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-#region-header button:hover{
-  background:rgb(0, 0, 139, 0.8);
-}
-
-#region-header a{
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-size: 1rem;
-  font-family:  'Finlandica', sans-serif;
+.category-header a{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family:  'Finlandica', sans-serif;
 }
 
 #turku{
@@ -516,7 +501,7 @@ header{
 /* footer */
 
 footer{
-  height: 100%;
+    height: 100%;
 }
 .footer-container{
     display: grid;
@@ -524,16 +509,16 @@ footer{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 50px 30px 20px 40px;
-    font-size: 1rem;
     height: 100vh;
 }
 
 .footer-container p:first-child{
-  white-space: nowrap; 
+    white-space: nowrap; 
 }
-.links{
-  justify-items: ;
+.footer-container .links p:first-child{
+    text-transform: uppercase;
 }
+
 .footer-container ul{
     list-style-type: none;
 }
@@ -545,27 +530,27 @@ footer{
 .footer-container li a{
     text-decoration: none;
     color: var(--secondary-color);
-    text-transform: uppercase;
+    font-weight: bolder;
 }
 .footer-container li a:hover{
-   border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .contact p{
-  padding: 0 40px 20px 0;
+    padding: 0 40px 20px 0;
 }
 
 .contact a{
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 480px) {
     .wrap{
       margin: 0;
     }
-    .grid-container, #category-header, #region-header, .footer-container {
+    .grid-container, .category-header, .footer-container {
       display: block;
       margin: auto;
       height: 100%;
@@ -573,12 +558,21 @@ footer{
     .box {
       margin: 10px;
     }
-    .hero-banner-container p:first-child, .hero-banner-container p{
-      padding: 10px 0;
+    .hero-banner-container p:first-child {
       white-space: normal;
     }
     .hero-banner-container p:first-child{
       font-size: 4rem;
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+    .hero-banner-container p:nth-child(2){
+      font-size: 4rem;
+      padding: 0 20px;
+    }
+    .hero-banner-container p:nth-child(3){
+      font-size: 1.5rem;
+      padding: 20px;
     }
     footer{
      height: 100%;
@@ -618,7 +612,7 @@ footer{
    }
     .footer-container{
       min-height: 100vh;
-      padding: 20px;
+      padding: 80px 0 0 40px;
       margin: 20px 20px 0 20px;
    }
   }

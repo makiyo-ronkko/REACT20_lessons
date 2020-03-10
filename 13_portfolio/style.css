@@ -356,8 +356,8 @@ textarea{
 
   @media screen and (max-width: 480px) {
     .header-container, .hero-banner-container, .about-container, .myskill-container, .skill-card, .footer-wrapper, .footer-container {
-      display: block;
-      height: 100%;
+        display: block;
+        height: 100%;
     }
     .header-container-logo{
         margin:0;
