@@ -5,11 +5,13 @@
 }
 body{
     font-family: 'Finlandica', sans-serif;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color);    height: 100%;
+
 }
 
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 .wrap{
@@ -512,6 +514,10 @@ header{
   }
 
 /* footer */
+
+footer{
+  height: 100%;
+}
 .footer-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -519,12 +525,15 @@ header{
     color: var(--secondary-color);
     padding: 50px 30px 20px 40px;
     font-size: 1rem;
+    height: 100vh;
 }
 
 .footer-container p:first-child{
   white-space: nowrap; 
 }
-
+.links{
+  justify-items: ;
+}
 .footer-container ul{
     list-style-type: none;
     align-self: center;
@@ -588,7 +597,7 @@ header{
       margin: 0;
       height: 100%;
     }
-    .grid-container, .footer-container {
+    .grid-container {
       grid-template-columns: 1fr 1fr 1fr;
       margin: auto;
     }

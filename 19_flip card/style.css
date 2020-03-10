@@ -1,0 +1,60 @@
+:root{
+    --background-color: linear-gradient(to top right, rgb(101, 115, 255), rgb(98, 122, 239), rgb(95, 129, 223), rgb(92, 137, 207), rgb(89, 144, 191), rgb(86, 151, 175), rgb(83, 158, 158), rgb(80, 165, 142), rgb(77, 172, 126), rgb(74, 180, 110), rgb(71, 187, 94), rgb(68, 194, 78));
+    --light-color: cornsilk;
+    --dark-color: sandybrown;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background: var(--background-color);
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    margin: 5rem;
+}
+
+.flip-card{
+    height: 200px;
+    width: 150px;
+    perspective: 500px;
+}
+
+.flip-card-inner{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.flip-card-front{
+    background: url("https://source.unsplash.com/1600x900/?nature,water") no-repeat center center/ cover;
+}
+.flip-card-back{
+    background: var(--dark-color);
+    transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
