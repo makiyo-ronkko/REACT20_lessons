@@ -88,7 +88,8 @@ main{
 }
 
 .home-container h1{
-    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 2rem;
 }
 
 #readmore {
@@ -160,6 +161,7 @@ p a:hover{
     flex: 50%;
     margin: 10px;
     align-content: center;
+    max-width: 480px;
 }
 
 #contact h2{
@@ -209,6 +211,7 @@ p a:hover{
 #contact .inner-text{
     display: flex;
     flex-direction: column;
+    max-width: 480px;
     flex: 50%;
     margin: 10px;
     line-height: 1.5rem;
