@@ -56,7 +56,7 @@ header ul li a:hover {
 }
 
 #logo img:hover{
-    background-color: #888888;
+    background-color: lightgray;
     border-radius: 5px;
 }
 
@@ -69,7 +69,7 @@ main{
 
 #home{
     background:url("https://source.unsplash.com/1600x900/?nature") fixed center center/ cover;
-    height: 680px;
+    height: 480px;
     width: 100%;
     padding: 20px;
 }
@@ -77,7 +77,7 @@ main{
 .home-container{
     max-width: 480px;
     height: 240px;
-    margin: 340px 0 0 90px;
+    margin: 100px 0 0 90px;
     padding: 40px;
     overflow: hidden;
     background-color: hsla(0, 100%, 90%, 0.4);
@@ -85,6 +85,10 @@ main{
     position: relative;
     line-height: 1.5rem;
     color: #ffffff;
+}
+
+.home-container h1{
+    padding: 10px;
 }
 
 #readmore {
@@ -101,6 +105,10 @@ p a{
     margin: 10px;
     border-radius: 5px;
     bottom: 20px;
+}
+p a:hover{
+    background: lightgray;
+    font-weight: bolder;
 }
 
 /* aboutus*/
@@ -133,6 +141,7 @@ p a{
     padding: 10px;
     display: flex;
     max-width: 480px;
+    object-fit: contain;
 }
 
 /* contact*/
@@ -144,7 +153,7 @@ p a{
     background-color: #2b2924;
     color: #ffffff;
     padding: 40px;
-
+    justify-content: center;
 }
 .contact-container{
     flex-direction: column;
@@ -194,7 +203,7 @@ p a{
 #contact h3{
     padding-top: 20px;
     margin: 20px 0;
-    border-top: 1px dotted brown;
+    border-top: 1px dotted lightgray;
 }
 
 #contact .inner-text{
@@ -213,4 +222,7 @@ p a{
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #15b9ff;
+}
+.btn:hover{
+    background: lightgray;
 }
