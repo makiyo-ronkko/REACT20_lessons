@@ -260,20 +260,8 @@ My Skill
     border-radius: 5px;
 }
 
-.skill-card .box .fa-html5{
+.skill-card .box .fa-html5, .skill-card .box .fa-css3-alt, .skill-card .box .fa-js, .skill-card .box .fa-figma{
     color: skyblue; 
-}
-
-.skill-card .box .fa-css3-alt{
-    color: skyblue;
-}
-
-.skill-card .box .fa-js{
-    color: skyblue;
-}
-
-.skill-card .box .fa-figma{
-    color: skyblue;
 }
 
 .progress-bar{
