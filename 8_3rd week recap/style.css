@@ -184,9 +184,8 @@ p a:hover{
 #contact input[type="email"],
 #contact input[type="text"]{
     width: 60%;
-    height: 1rem;
     border-radius: 3px;
-    padding: 2px;
+    padding: 8px;
 }
 
 #contact input[type="radio"],
@@ -200,6 +199,7 @@ p a:hover{
 
 #contact textarea{
     width: 240px;
+    padding: 8px;
 }
 
 #contact h3{
