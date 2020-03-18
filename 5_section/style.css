@@ -66,30 +66,25 @@ h2 {
   margin-bottom: 10px;
 }
 
-#past {
-  background: url("https://source.unsplash.com/user/erondu/daily") no-repeat
-    fixed center center/ cover;
+#past, #present, #future{
   height: 600px;
   width: 100%;
   padding: 20px;
   line-height: 1.6rem;
 }
 
+#past {
+  background: url("https://source.unsplash.com/user/erondu/daily") no-repeat
+    fixed center center/ cover;
+}
+
 #present {
   background-color: #fffafa;
-  height: 600px;
-  width: 100%;
-  padding: 20px;
-  line-height: 1.6rem;
 }
 
 #future {
   background: url("https://source.unsplash.com/weekly?nature") no-repeat fixed
     center center/ cover;
-  height: 600px;
-  width: 100%;
-  padding: 20px;
-  line-height: 1.6rem;
 }
 
 img {
